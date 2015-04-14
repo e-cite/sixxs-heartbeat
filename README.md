@@ -1,5 +1,5 @@
 # sixxs-heartbeat
-Send heartbeats to SixXS TIC from pfsense for keep alive a SixXS heartbeat tunnel
+Send heartbeats to SixXS POP directly from pfSense for keeping alive a SixXS heartbeat tunnel
 
 
 This script implements the SixXS Heartbeat Protocol as described in the https://tools.ietf.org/html/draft-massar-v6ops-heartbeat-00 on pfSense respectively BSD.
@@ -23,3 +23,9 @@ Restart the pfsense and check the "ps aux" output in the "Command prompt" WebGUI
 
 
 You also can monitor the packets beeing send on the WAN interface with "Packet Capture" using destination port 3740/udp and then verify your heartbeats.
+
+
+The tunnel can be installed on the pfSense using the linked tutorials:
+https://doc.pfsense.org/index.php/Using_IPv6_with_a_Tunnel_Broker
+
+http://iserv.nl/files/pfsense/ipv6/
